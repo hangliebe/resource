@@ -59,4 +59,15 @@ git clone https://github.com/ppoffice/hexo-theme-icarus.git icarus
 
 # 自动化配置脚本
 
-[查看脚本](https://gitee.com/hangliebe/resource/tree/master/shellorbat/hexo/hexoinit_for_windows.sh)。
+下载windows脚本：
+
+```
+wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_for_windows.sh
+```
+
+下载macos脚本：
+
+```
+wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_for_macos.sh
+```
+
