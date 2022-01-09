@@ -29,3 +29,18 @@
 [hexoinit](https://gitee.com/hangliebe/resource/tree/master/shellorbat/hexo/hexoinit_for_windows.sh)脚本用于在windows环境下初始化hexo。
 
 执行脚本后输入项目名称，可以配置一个icarus主题的博客网站。
+
+## mingw64工具下载
+
+[点击查看更多信息。](https://gitee.com/hangliebe/resource/tree/master/shellorbat/mingw64/windows下使用shell脚本.md)
+
+## 同步gitee和github仓
+
+试图让github和 gitee上的同名仓库进行同步更新。
+
+使用下面命令下载同步脚本。
+
+```
+wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/sync_code/sync_code_for_github_and_gitee.sh
+```
+
