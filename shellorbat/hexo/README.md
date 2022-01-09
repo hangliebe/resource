@@ -17,8 +17,14 @@ wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_fo
 **下载macos脚本：**
 
 ```
-wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_for_macos.sh
+curl -O https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_for_macos.sh
 ```
+
+# MINGW64工具【for wondows】
+
+## 下载
+
+工具在[官网下载](https://git-scm.com/downloads)对应windows版本进行安装就可以。
 
 # nodejs安装
 
@@ -28,13 +34,7 @@ wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_fo
 
 可以[参考文档](https://zhuanlan.zhihu.com/p/105715224)做一个node_module配置【非必要】。
 
-# MINGW64工具【for wondows】
-
-## 下载
-
-工具在[官网下载](https://git-scm.com/downloads)对应windows版本进行安装就可以。
-
-## 切换镜像
+# 切换镜像
 
 在 Git Bash 这个命令行工具内可以切换镜像，有些软件安装时候如果没有vpn可能访问不了。
 
