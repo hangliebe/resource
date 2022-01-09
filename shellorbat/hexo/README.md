@@ -1,4 +1,34 @@
-# MINGW64工具
+如何快速的搭建一个hexo博客。
+
+# 自动化配置脚本
+
+运行脚本前确保环境可用：
+
+windows确保安装了mingw64和nodejs。
+
+macos确保安装了nodejs。
+
+**下载windows脚本：**
+
+```
+wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_for_windows.sh
+```
+
+**下载macos脚本：**
+
+```
+wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_for_macos.sh
+```
+
+# nodejs安装
+
+在[官网下载](https://nodejs.org/en/)nodejs安装包,对照自己的PC系统选择对应版本。一直按默认选项安装即可。
+
+ 使用`node -v` 和 `npm -v`  查看是否安装成功。
+
+可以[参考文档](https://zhuanlan.zhihu.com/p/105715224)做一个node_module配置【非必要】。
+
+# MINGW64工具【for wondows】
 
 ## 下载
 
@@ -18,14 +48,6 @@ https://registry.npmjs.org
 切换淘宝镜像：`npm config set registry http://registry.npm.taobao.org `
 
 切换回官方版本：`npm config set registry https://registry.npmjs.org`
-
-# nodejs安装
-
-在[官网下载](https://nodejs.org/en/)nodejs安装包。一直按默认选项安装即可。
-
- 使用`node -v` 和 `npm -v`  查看是否安装成功。
-
-可以[参考文档](https://zhuanlan.zhihu.com/p/105715224)做一个node_module配置。
 
 # hexo使用
 
@@ -56,18 +78,4 @@ git clone https://github.com/ppoffice/hexo-theme-icarus.git icarus
 ### 其他配置
 
 不在此讨论。
-
-# 自动化配置脚本
-
-下载windows脚本：
-
-```
-wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_for_windows.sh
-```
-
-下载macos脚本：
-
-```
-wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/hexo/hexoinit_for_macos.sh
-```
 
