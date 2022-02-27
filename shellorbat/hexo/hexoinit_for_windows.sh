@@ -4,6 +4,16 @@ function configTheme() {
 	
 	cd ..
 	sed -i 's/landscape/icarus/g' _config.yml
+	
+	# 配置plantuml 
+	npm install hexo-filter-kroki --save
+
+    # 配置echarts
+	npm install hexo-tag-echarts --save
+	
+	# 配置文章置顶功能
+	npm install hexo-generator-topindex --save
+	npm install --save object-assign
 }
 
 # 确保PC上安装了MINGW64工具
