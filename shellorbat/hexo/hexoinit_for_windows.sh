@@ -9,11 +9,20 @@ function configTheme() {
 	npm install hexo-filter-kroki --save
 
     # 配置echarts
+	# 需要将下面这句插入到themes\icarus\layout\common\head.jsx中
+	# {<script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>}
 	npm install hexo-tag-echarts --save
+	
 	
 	# 配置文章置顶功能
 	npm install hexo-generator-topindex --save
 	npm install --save object-assign
+	
+	# 加密
+	npm install --save hexo-blog-encrypt
+	
+	# 推动git
+	npm install --save hexo-deployer-git
 }
 
 # 确保PC上安装了MINGW64工具
