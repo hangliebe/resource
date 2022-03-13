@@ -31,6 +31,21 @@ function configTheme() {
 
 # 确保PC上安装了MINGW64工具
 # 确保安装nodejs 并配置环境变量
+if ! [ -x "$(command -v node)" ]; then
+  echo 'Error: node is not installed.' >&2
+  # 安装node
+  echo please install node from web site：https://nodejs.org/en/
+  echo "执行中断"
+  exit
+fi
+
+# npm一般在安装node.js时候就安装好了
+if ! [ -x "$(command -v npm)" ]; then
+  echo 'Error: npm is not installed.' >&2
+  echo "执行中断"
+  exit
+fi
+
 read -p "请输入创建项目的名称（英文名）:" PRO_NAME
 
 echo 项目名称设置为: $PRO_NAME
