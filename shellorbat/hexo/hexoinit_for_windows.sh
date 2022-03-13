@@ -23,6 +23,10 @@ function configTheme() {
 	
 	# 推动git
 	npm install --save hexo-deployer-git
+	
+	# 站点map
+	npm install hexo-generator-sitemap --save
+    npm install hexo-generator-baidu-sitemap --save
 }
 
 # 确保PC上安装了MINGW64工具
