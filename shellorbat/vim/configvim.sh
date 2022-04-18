@@ -43,7 +43,7 @@ mv temp/doc/taglist.txt ~/.vim/doc/taglist.txt
 rm -rf NERD_tree.zip
 rm -rf taglist_46.zip
 
-wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/vim/.vimrc ~/.vimrc
+wget -P ~/ https://gitee.com/hangliebe/resource/raw/master/shellorbat/vim/.vimrc
 
 echo "####################"
 echo "安装结束"
