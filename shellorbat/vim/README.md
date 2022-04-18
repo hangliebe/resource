@@ -11,7 +11,7 @@
 - 执行脚本
 
 ```
-wegt https://gitee.com/hangliebe/resource/raw/master/shellorbat/vim/configvim.sh
+wget https://gitee.com/hangliebe/resource/raw/master/shellorbat/vim/configvim.sh
 
 sh configvim.sh
 ```
