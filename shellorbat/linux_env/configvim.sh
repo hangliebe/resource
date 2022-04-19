@@ -1,14 +1,34 @@
+
+
+function configforlinux() {
+  sudo apt-get install ctags
+}
+
+function configforwindows() {
+  wget https://files.cnblogs.com/files/yaolin1228/ctags2018-1-17.zip
+  unzip ctags2018-1-17.zip -d temp
+
+  mv temp/ctags.exe  /mingw64/bin/
+
+  # 删除临时文件
+  rm -rf temp
+  rm -rf ctags2018-1-17.zip
+}
+
 echo "####################"
 echo "开始安装ctags"
 echo "####################"
-wget https://files.cnblogs.com/files/yaolin1228/ctags2018-1-17.zip
-unzip ctags2018-1-17.zip -d temp
 
-mv temp/ctags.exe  /mingw64/bin/
+echo "a)linux环境配置"
+echo "b)windows上wingw64环境配置"
+read -n1 -p "请选择配置的环境a/b:" GO_ON
+case $GO_ON in
+A | a) echo
+	configforlinux;;
+B | b) echo
+	configforwindows;;
+esac
 
-# 删除临时文件
-rm -rf temp
-rm -rf ctags2018-1-17.zip
 
 echo "####################"
 echo "创建.vim"
@@ -43,7 +63,7 @@ mv temp/doc/taglist.txt ~/.vim/doc/taglist.txt
 rm -rf NERD_tree.zip
 rm -rf taglist_46.zip
 
-wget -P ~/ https://gitee.com/hangliebe/resource/raw/master/shellorbat/vim/.vimrc
+wget -P ~/ https://gitee.com/hangliebe/resource/raw/master/shellorbat/linux_env/.vimrc
 
 echo "####################"
 echo "安装结束"
