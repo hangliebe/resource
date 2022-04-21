@@ -23,6 +23,7 @@ function configforwindows() {
 }
 
 function configforwindows_Mobaxterm() {
+  mkdir temp
   wget https://files.cnblogs.com/files/yaolin1228/ctags2018-1-17.zip
   unzip ctags2018-1-17.zip -d temp
 
@@ -51,19 +52,20 @@ echo "b)windows上wingw64环境配置"
 echo "c)windows上Mobaxterm环境配置"
 read -n1 -p "请选择配置的环境a/b:" GO_ON
 case $GO_ON in
-A | a) echo
-	configforlinux;;
-B | b) echo
-	configforwindows;;
-C | c) echo
-	configforwindows_Mobaxterm;;
+    A | a) echo
+        configforlinux;;
+    B | b) echo
+        configforwindows;;
+    C | c) echo
+        configforwindows_Mobaxterm;;
 esac
+
 
 
 echo "####################"
 echo "创建.vim"
 echo "####################"
-
+mkdir temp
 mkdir ~/.vim
 
 
@@ -81,6 +83,7 @@ mv temp/* ~/.vim/
 echo "####################"
 echo "开始安装taglist_46.zip"
 echo "####################"
+
 
 wget https://gitee.com/hangliebe/resource/raw/master/file/taglist_46.zip
 
