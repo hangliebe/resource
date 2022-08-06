@@ -7,6 +7,7 @@ set nocompatible
 
 call plug#begin()
 Plug 'scrooloose/nerdtree'
+Plug 'valloric/youcompleteme'
 call plug#end()
 
 " ######set for NERDTree############
@@ -54,3 +55,4 @@ set cc=120
 set shiftwidth=4
 " 缩进时候使用空格方式
 set expandtab
+
