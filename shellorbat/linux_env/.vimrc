@@ -2,7 +2,12 @@
 "==================================Author:zhanhang==============================
 "=====================================Year:2022=================================
 "===============================================================================
-filetype plugin on
+" 不与vi兼容
+set nocompatible
+
+call plug#begin()
+Plug 'scrooloose/nerdtree'
+call plug#end()
 
 " ######set for NERDTree############
 " 设置NERDTree子窗口位置
@@ -28,7 +33,7 @@ nmap <F2>  :NERDTreeFind<CR>
 " 搜索高亮
 set hlsearch
 " 搜索不区分大小写
-set ignorecase
+" set ignorecase
 " 设置环形搜索  反之可以 set nowrapscan
 set wrapscan
 
@@ -41,3 +46,11 @@ set cindent
 set number
 " 自动补全
 set completeopt=longest,menu
+" 相对行号 
+set relativenumber
+" 设置单行字符数量提示符
+set cc=120
+" 缩进4个空格
+set shiftwidth=4
+" 缩进时候使用空格方式
+set expandtab
